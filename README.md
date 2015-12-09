@@ -1,14 +1,10 @@
 # NMI
 
-Read ground true and heuristic community files and calculate NMI (normalized Mutual Information) as defined by Danon et al (2005)
-
-# Compiling
-
-
+Calculate NMI (normalized Mutual Information) as defined by Danon et al (2005)
 
 # Usage
   
-	Usage: " << prog_name << " -g groundTrue_file -h heuristic_file -n num_nodes" << std::endl;
+	Usage: ./nmi -g groundTrue_file -h heuristic_file -n num_nodes
 	-g ground true file
 	-h heuristic file
 	-n Number of nodes in the graph
@@ -16,3 +12,12 @@ Read ground true and heuristic community files and calculate NMI (normalized Mut
 	Return: NMI time
 	NMI = -2 * I(X;Y)/(H(X)+H(Y))
 	time = wall time in seconds
+
+# Community file format
+
+One community per line with the ID of each node separated by space.
+OBS: Node's ID need's to be in range [0,N-1]
+
+# Example
+
+	./nmi -g groundtruePartition.txt -h heuristicPartition.txt -n 334863
