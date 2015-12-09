@@ -7,7 +7,7 @@ Calculate NMI (normalized Mutual Information) as defined by Danon et al (2005).
 
 # Compiling
 
-Just call 'make' in Linux.
+Just call `make` in Linux or Mac.
 
 # Usage
   
