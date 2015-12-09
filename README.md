@@ -18,7 +18,7 @@ Calculate NMI (normalized Mutual Information) as defined by Danon et al (2005).
 
 # Community file format
 
-One community per line with the ID of each node separated by space. All node ID needs to  be in range [0,n-1].
+One community per line with the ID of each node separated by space. All node IDs needs to  be in range [0,n-1].
 
 The following example presents a partition with 3 commuties and 10 nodes.
 
