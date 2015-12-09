@@ -5,6 +5,10 @@ Calculate NMI (normalized Mutual Information) as defined by Danon et al (2005).
 	DANON, Leon et al. Comparing community structure identification. 
 	Journal of Statistical Mechanics: Theory and Experiment, v. 2005, n. 09, p. P09008, 2005.
 
+# Compiling
+
+Just call 'make' in Linux.
+
 # Usage
   
 	Usage: ./nmi -g groundTrue_file -h heuristic_file -n num_nodes
