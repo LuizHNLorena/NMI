@@ -7,7 +7,7 @@ Calculate NMI (normalized Mutual Information) as defined by Danon et al (2005).
 
 # Compiling
 
-Just call `make` in Linux or Mac.
+Just call `make` in Linux or Mac. This will compile the [nmi](nmi.cpp) file and the converters [convert](convert.cpp) and [convertLFR](convertLFR.cpp).
 
 # Usage
   
