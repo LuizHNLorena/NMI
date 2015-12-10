@@ -20,6 +20,10 @@ Just call `make` in Linux or Mac.
 	NMI = -2 * I(X;Y)/(H(X)+H(Y))
 	time = wall time in seconds
 
+# Example of use
+
+	./nmi -g groundtruePartition.txt -h heuristicPartition.txt -n 334863
+
 # Community file format
 
 One community per line with the ID of each node separated by space. All node IDs needs to  be in range [0,n-1].
@@ -30,6 +34,10 @@ The following example presents a partition with 3 commuties and 10 nodes.
 	1 5 6
 	8 9
 
-# Example of use
+If your partition follows the pattern of one community per line but is out of range [0,n-1] you can convert it with the program [convert](convert.cpp).
 
-	./nmi -g groundtruePartition.txt -h heuristicPartition.txt -n 334863
+	./convert originalFile.txt resultingFile.txt
+
+If you are working with [LFR benchmark](https://sites.google.com/site/andrealancichinetti/files) community files you can convert it by using the program [convertLFR](convertLFR.cpp).
+
+	./convertLFR LFRfile.txt resultingFile.txt
