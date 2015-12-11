@@ -5,6 +5,11 @@ Calculate NMI (normalized Mutual Information) as defined by Danon et al (2005).
 	DANON, Leon et al. Comparing community structure identification. 
 	Journal of Statistical Mechanics: Theory and Experiment, v. 2005, n. 09, p. P09008, 2005.
 
+Algorithm characteristics:
+
+- Time complexity: O (3n + |C1|*|C2|) , where |C1| and |C2| are the number of communities in partitions 1 and 2 respectively
+- Space complexity: O (2n + |C1|*|C2| + |C1| + |C2|)
+
 # Compiling
 
 Just call `make` in Linux or Mac. This will compile the [nmi](nmi.cpp) file and the converters [convert](convert.cpp) and [convertLFR](convertLFR.cpp).
